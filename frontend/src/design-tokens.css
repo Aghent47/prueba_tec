@@ -1,0 +1,159 @@
+/* ============================================
+   DESIGN TOKENS - Professional Color System
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    /* ===== Color Palette - Professional & Aesthetic ===== */
+
+    /* Primary - Deep Blue (Trust, Professionalism) */
+    --color-primary-50: hsl(217, 91%, 97%);
+    --color-primary-100: hsl(217, 91%, 92%);
+    --color-primary-200: hsl(217, 89%, 85%);
+    --color-primary-300: hsl(217, 89%, 74%);
+    --color-primary-400: hsl(217, 87%, 63%);
+    --color-primary-500: hsl(217, 78%, 51%);
+    --color-primary-600: hsl(217, 73%, 43%);
+    --color-primary-700: hsl(217, 68%, 35%);
+    --color-primary-800: hsl(217, 63%, 28%);
+    --color-primary-900: hsl(217, 58%, 22%);
+
+    /* Secondary - Elegant Purple */
+    --color-secondary-50: hsl(270, 67%, 97%);
+    --color-secondary-100: hsl(270, 67%, 92%);
+    --color-secondary-200: hsl(270, 65%, 84%);
+    --color-secondary-300: hsl(270, 65%, 72%);
+    --color-secondary-400: hsl(270, 63%, 60%);
+    --color-secondary-500: hsl(270, 58%, 48%);
+    --color-secondary-600: hsl(270, 58%, 40%);
+    --color-secondary-700: hsl(270, 58%, 32%);
+    --color-secondary-800: hsl(270, 58%, 26%);
+    --color-secondary-900: hsl(270, 58%, 20%);
+
+    /* Accent - Vibrant Teal (Modern, Fresh) */
+    --color-accent-50: hsl(180, 77%, 95%);
+    --color-accent-100: hsl(180, 77%, 88%);
+    --color-accent-200: hsl(180, 75%, 76%);
+    --color-accent-300: hsl(180, 73%, 64%);
+    --color-accent-400: hsl(180, 71%, 52%);
+    --color-accent-500: hsl(180, 71%, 42%);
+    --color-accent-600: hsl(180, 71%, 34%);
+    --color-accent-700: hsl(180, 71%, 27%);
+    --color-accent-800: hsl(180, 71%, 22%);
+    --color-accent-900: hsl(180, 71%, 17%);
+
+    /* Neutral - Sophisticated Grays */
+    --color-neutral-50: hsl(220, 20%, 98%);
+    --color-neutral-100: hsl(220, 18%, 95%);
+    --color-neutral-200: hsl(220, 16%, 88%);
+    --color-neutral-300: hsl(220, 14%, 75%);
+    --color-neutral-400: hsl(220, 12%, 60%);
+    --color-neutral-500: hsl(220, 10%, 45%);
+    --color-neutral-600: hsl(220, 12%, 35%);
+    --color-neutral-700: hsl(220, 14%, 25%);
+    --color-neutral-800: hsl(220, 16%, 18%);
+    --color-neutral-900: hsl(220, 18%, 12%);
+
+    /* Semantic Colors */
+    --color-success: hsl(142, 71%, 45%);
+    --color-success-light: hsl(142, 71%, 95%);
+    --color-error: hsl(0, 84%, 60%);
+    --color-error-light: hsl(0, 84%, 97%);
+    --color-warning: hsl(38, 92%, 50%);
+    --color-warning-light: hsl(38, 92%, 95%);
+    --color-info: hsl(199, 89%, 48%);
+    --color-info-light: hsl(199, 89%, 95%);
+
+    /* ===== Typography ===== */
+    --font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-family-heading: 'Inter', system-ui, -apple-system, sans-serif;
+
+    /* Font Sizes - Fluid Typography */
+    --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+    --text-sm: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
+    --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+    --text-lg: clamp(1.125rem, 1.05rem + 0.375vw, 1.25rem);
+    --text-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+    --text-2xl: clamp(1.5rem, 1.35rem + 0.75vw, 1.875rem);
+    --text-3xl: clamp(1.875rem, 1.65rem + 1.125vw, 2.25rem);
+    --text-4xl: clamp(2.25rem, 1.95rem + 1.5vw, 3rem);
+
+    /* Font Weights */
+    --font-light: 300;
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    --font-extrabold: 800;
+
+    /* Line Heights */
+    --leading-tight: 1.25;
+    --leading-snug: 1.375;
+    --leading-normal: 1.5;
+    --leading-relaxed: 1.625;
+    --leading-loose: 2;
+
+    /* ===== Spacing System ===== */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --space-20: 5rem;
+    --space-24: 6rem;
+
+    /* ===== Shadows - Layered Depth ===== */
+    --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+
+    /* Colored Shadows for Depth */
+    --shadow-primary: 0 10px 30px -5px hsla(217, 78%, 51%, 0.3);
+    --shadow-accent: 0 10px 30px -5px hsla(180, 71%, 42%, 0.3);
+
+    /* ===== Border Radius ===== */
+    --radius-sm: 0.375rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+    --radius-2xl: 1.5rem;
+    --radius-full: 9999px;
+
+    /* ===== Animations ===== */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slower: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Easing Functions */
+    --ease-in: cubic-bezier(0.4, 0, 1, 1);
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    /* ===== Glassmorphism ===== */
+    --glass-bg: rgba(255, 255, 255, 0.08);
+    --glass-bg-strong: rgba(255, 255, 255, 0.12);
+    --glass-border: rgba(255, 255, 255, 0.18);
+    --glass-blur: 16px;
+
+    /* ===== Z-Index Scale ===== */
+    --z-base: 0;
+    --z-dropdown: 1000;
+    --z-sticky: 1100;
+    --z-fixed: 1200;
+    --z-modal-backdrop: 1300;
+    --z-modal: 1400;
+    --z-popover: 1500;
+    --z-tooltip: 1600;
+}
